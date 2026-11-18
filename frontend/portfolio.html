@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <h1>My Portfolio</h1>
+
+            <button onclick="window.location.href='dashboard.html'">
+                Back to Dashboard
+            </button>
+        </header>
+
+        <main class="dashboard-content">
+
+            <button onclick="window.print()" class="download-btn">
+                Download Portfolio as PDF
+            </button>
+
+            <!-- Profile Section -->
+            <section class="dashboard-card">
+
+                <!-- Profile Photo -->
+                <img id="portfolioPhoto"
+                     src=""
+                     alt="Profile Photo"
+                     style="display:none; width:160px; height:160px;
+                     object-fit:cover; border-radius:50%;
+                     margin:0 auto 20px;">
+
+                <h2 id="portfolioName">My Name</h2>
+
+                <h3 id="portfolioProfession"></h3>
+
+                <p id="portfolioAbout"></p>
+
+                <p id="portfolioEmail"></p>
+
+                <p id="portfolioPhone"></p>
+
+            </section>
+
+            <!-- Education Section -->
+            <section class="dashboard-card" style="margin-top: 25px;">
+
+                <h2>Education</h2>
+
+                <p id="portfolioEducation"></p>
+
+            </section>
+
+            <!-- Skills Section -->
+            <section class="dashboard-card" style="margin-top: 25px;">
+
+                <h2>Skills</h2>
+
+                <p id="portfolioSkills"></p>
+
+            </section>
+
+            <!-- Projects Section -->
+            <section class="dashboard-card" style="margin-top: 25px;">
+
+                <h2>My Projects</h2>
+
+                <div id="portfolioProjects"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/portfolio.js"></script>
+
+</body>
+</html>

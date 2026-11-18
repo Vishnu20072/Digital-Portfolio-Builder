@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Projects - Digital Portfolio Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>My Projects</h1>
+            <p>Add your professional projects</p>
+
+            <form id="projectForm">
+
+                <div class="input-group">
+                    <label>Project Name</label>
+                    <input type="text" id="projectName"
+                           placeholder="Enter project name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Project Description</label>
+                    <textarea id="projectDescription" rows="4"
+                              placeholder="Describe your project"
+                              required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Technologies Used</label>
+                    <input type="text" id="technologies"
+                           placeholder="HTML, CSS, JavaScript" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Project Link</label>
+                    <input type="url" id="projectLink"
+                           placeholder="https://example.com">
+                </div>
+
+                <button type="submit">Add Project</button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <div id="projectList"></div>
+
+            <p class="register-link">
+                <a href="dashboard.html">Back to Dashboard</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/projects.js"></script>
+
+</body>
+</html>

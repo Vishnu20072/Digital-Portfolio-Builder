@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - Digital Portfolio Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Create Your Profile</h1>
+            <p>Enter your professional information</p>
+
+            <form id="profileForm">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Profile Photo Upload -->
+                <div class="input-group">
+                    <label>Profile Photo</label>
+
+                    <input type="file"
+                        id="profilePhoto"
+                        accept="image/*">
+
+                    <img id="photoPreview"
+                        src=""
+                        alt="Profile Photo Preview"
+                        style="display:none; width:150px; height:150px;
+                        object-fit:cover; border-radius:50%;
+                        margin-top:15px;">
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="profileEmail"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <div class="input-group">
+                    <label>Professional Title</label>
+                    <input type="text" id="profession"
+                        placeholder="Example: Web Developer">
+                </div>
+
+                <div class="input-group">
+                    <label>About Me</label>
+                    <textarea id="about" rows="4"
+                        placeholder="Write about yourself"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Education</label>
+                    <input type="text" id="education"
+                        placeholder="Enter your education">
+                </div>
+
+                <div class="input-group">
+                    <label>Skills</label>
+                    <input type="text" id="skills"
+                        placeholder="HTML, CSS, JavaScript">
+                </div>
+
+                <button type="submit">Save Profile</button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <p class="register-link">
+                <a href="dashboard.html">Back to Dashboard</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/profile.js"></script>
+
+</body>
+</html>
+

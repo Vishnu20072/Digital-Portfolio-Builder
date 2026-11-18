@@ -1,0 +1,377 @@
+
+/* ==================================
+   GENERAL STYLING
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* ==================================
+   LOGIN AND REGISTER PAGE
+================================== */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-box > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* ==================================
+   BUTTON STYLING
+================================== */
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5548c8;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ==================================
+   REGISTER LINK
+================================== */
+
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ==================================
+   DASHBOARD STYLING
+================================== */
+
+.dashboard-container {
+    min-height: 100vh;
+    background: #f4f6fb;
+}
+
+.dashboard-header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    color: #667eea;
+    font-size: 24px;
+}
+
+.dashboard-header button {
+    width: auto;
+    padding: 10px 25px;
+}
+
+.dashboard-content {
+    padding: 40px;
+}
+
+.dashboard-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-content > p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.dashboard-card button {
+    margin-top: 5px;
+}
+
+/* ==================================
+   RESPONSIVE DESIGN
+================================== */
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        padding: 15px 20px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 18px;
+    }
+
+    .dashboard-content {
+        padding: 25px 20px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+}
+
+/* ==================================
+   PROFESSIONAL PORTFOLIO DESIGN
+================================== */
+
+.dashboard-content > section {
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.dashboard-content > section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.12);
+}
+
+/* Portfolio Name */
+
+#portfolioName {
+    font-size: 36px;
+    color: #273469;
+    margin-bottom: 12px;
+}
+
+/* Profession */
+
+#portfolioProfession {
+    color: #667eea;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* About */
+
+#portfolioAbout {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contact Details */
+
+#portfolioEmail,
+#portfolioPhone {
+    margin-top: 12px;
+    color: #555;
+}
+
+/* Section Headings */
+
+.dashboard-content > section h2 {
+    color: #273469;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+/* Skills */
+
+#portfolioSkills {
+    line-height: 2;
+    color: #555;
+}
+
+/* Project Cards */
+
+#portfolioProjects .dashboard-card {
+    border: 1px solid #eeeeff;
+    background: #f8f9ff;
+    margin-bottom: 18px;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+#portfolioProjects .dashboard-card h3 {
+    color: #667eea;
+    margin-bottom: 12px;
+}
+
+#portfolioProjects .dashboard-card p {
+    line-height: 1.7;
+}
+
+/* Project Link */
+
+#portfolioProjects a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #667eea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#portfolioProjects a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Responsive Design */
+
+@media (max-width: 600px) {
+
+    #portfolioName {
+        font-size: 28px;
+    }
+
+    #portfolioProfession {
+        font-size: 19px;
+    }
+
+    .dashboard-content > section {
+        padding: 22px;
+    }
+}
+
+/* ==================================
+   PDF DOWNLOAD BUTTON
+================================== */
+
+.download-btn {
+    max-width: 250px;
+    margin-bottom: 25px;
+    background: #273469;
+}
+
+.download-btn:hover {
+    background: #667eea;
+}
+
+/* ==================================
+   PRINT / SAVE AS PDF
+================================== */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .dashboard-header,
+    .download-btn {
+        display: none !important;
+    }
+
+    .dashboard-container,
+    .dashboard-content {
+        background: white;
+        padding: 0;
+    }
+
+    .dashboard-content > section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        transform: none;
+        page-break-inside: avoid;
+    }
+
+    #portfolioProjects .dashboard-card {
+        background: white;
+        box-shadow: none;
+    }
+}
